@@ -1,0 +1,104 @@
+.main-pendaftaran-online-div {
+  background-image: linear-gradient(to bottom right, #136bed, #a827fb);
+  padding-bottom: 100px;
+}
+
+.col-sm-6 {
+  margin-bottom: 20px !important;
+}
+
+.title-pendaftaran-online-inner {
+  padding-top: 180px;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.program {
+  text-align: center;
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+  color: white;
+  display: flex;
+  background-image: linear-gradient(to bottom, #7519c5, #44b4fb);
+  border-radius: 30px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 11px 17px 6px rgba(0, 0, 0, 0.37);
+}
+
+.program-title {
+  margin-bottom: 40px;
+}
+
+.garis {
+  border: 1px solid #ffffff;
+}
+.detailhargadiskon {
+  color: black;
+  font-weight: bold;
+}
+
+/* FORM */
+
+.pendaftaran-online-white-div {
+  margin: auto;
+  /* width: 70%; */
+  background-color: white;
+  border-radius: 20px;
+}
+
+.pendaftaran-online-form {
+  padding: 40px;
+  color: #0000ff;
+  margin: auto;
+  text-align: center;
+}
+.pendaftaran-online-form select,
+.pendaftaran-online-form textarea {
+  border: 2px solid #0000ff !important;
+}
+
+.pendaftaran-online-form input,
+.pendaftaran-online-form select,
+.pendaftaran-online-form textarea {
+  border-color: #0000ff;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.pendaftaran-online-button {
+  border: none;
+  background-color: #0000ff;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.pendaftaran-online-button:hover {
+  transform: translateY(-10px);
+  transition: all 0.4s ease-in-out;
+}
+
+.card-pendaftaran {
+  background-color: #ffffff;
+  box-shadow: -1px 3px 28px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+.card-pendaftaran:hover {
+  transform: translateY(-15px);
+  transition: all 0.4s ease-in-out;
+  box-shadow: -1px 3px 28px 4px rgba(0, 0, 0, 0.62);
+}
+.detailpembayaran {
+  margin-top: 40px;
+}

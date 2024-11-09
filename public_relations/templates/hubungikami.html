@@ -1,0 +1,27 @@
+{% extends 'base_pr.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'css/hubungikami.css' %}" />
+
+<div class="page-faq">
+  <div class="main-div-pengajar"></div>
+  <div class="pembatas-main"></div>
+  <h1 class="title-pendaftaran">Hubungi Kami</h1>
+  <h1 class="title-pendaftaran">InterStudi Public Relations</h1>
+  <div class="card-faq">
+    <div class="faq-form">
+      <input type="text" name="" id="" placeholder="Nama Lengkap" />
+      <br /><br />
+      <input type="text" name="" id="" placeholder="Email" />
+      <br /><br />
+      <input type="text" name="" id="" placeholder="Judul" />
+      <br /><br />
+      <textarea rows="5" placeholder="Pertanyaan"></textarea>
+      <br /><br />
+    </div>
+  </div>
+  <div class="center">
+    <button type="submit" class="faq-button">SUBMIT</button>
+  </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,35 @@
+.main-galeri-div{
+  background-image: url('../img/bg_galeri.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.title-galeri-inner{
+  padding-top: 180px;
+  margin: auto;
+  width: 70%;
+  color: white;
+  text-align: center;
+}
+
+.galeri{
+  /* position: relative;
+  z-index: 2; */
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-image: linear-gradient(
+    to bottom right,
+    #136BED,
+    #A827FB
+  );
+  margin-top: -50px;
+  padding-bottom: 110px;
+  width: 100%;
+}
+
+#galeri-carousel-inner{
+  width: 70%;
+  margin: auto;
+  border-radius: 20px;
+}

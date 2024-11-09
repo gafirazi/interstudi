@@ -1,0 +1,45 @@
+{% extends 'base_fashion.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'css/artikel.css' %}" />
+
+<div class="page-artikel">
+  <div class="main-div-pengajar">
+    <div class="title-div">
+      <div class="title-inner">
+        <div class="title-design-program">
+          <h1 class="content-title-design-artikel1">Artikel</h1>
+          <h1 class="content-title-design-artikel2">Fashion</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pembatas-main-artikel"></div>
+  <div class="konten-card-artikel">
+    <div class="container">
+      <div class="row">
+      {% for artikel in list_artikel %}
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="{% url 'detailartikel' nama_artikel=artikel.url %}" class="card-direct">
+            <div class="text-explanation-artikel">
+              <img
+                src="{% static 'img/'|add:artikel.url|add:'.jpeg' %}"
+                class="image-card-artikel"
+                alt=""
+              />
+              <div class="isi-text-artikel">
+                {{ artikel.title }}
+                <br />
+                <a href="{% url 'detailartikel' nama_artikel=artikel.url %}" class="viewmore-artikel"
+                  >View More</a
+                >
+              </div>
+            </div></a
+          >
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

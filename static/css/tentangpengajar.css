@@ -1,0 +1,288 @@
+.page-tentang-pengajar {
+  /* height: 370vh; */
+  background-color: #a7242c;
+}
+
+.main-div-tentangpengajar {
+  position: relative;
+
+  padding-top: 75px;
+  padding-bottom: 90px;
+
+  /* border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px; */
+
+  background-image: url("../img/image-adji.png");
+  background-size: cover;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+
+.inner-tentangpengajar {
+  margin-top: 180px !important;
+  margin: auto;
+  width: 70%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content-title-tentangpengajar {
+  text-align: center;
+  line-height: 0.7;
+  font-size: 50px;
+}
+
+#firstname {
+  font-size: 90px !important;
+}
+#lastname {
+  margin-top: 15px;
+}
+
+.detail-main-div-tentangpengajar {
+  margin-top: 0px;
+  width: 70%;
+}
+
+#portofolio-pengajar {
+  background-color: #a7242c !important;
+}
+
+/* Section 2 colom portofolio */
+ul.isi-portofolio {
+  list-style-position: outside;
+  font-size: 13px;
+}
+
+.about-left-tentangpengajar {
+  margin-right: 0px !important;
+}
+
+.title-portofolio {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-right-tentangpengajar {
+  margin-top: 4 0px;
+  margin-left: -40px;
+  color: #ffc5c4;
+}
+
+/* Section Clients Pengajar */
+.achievment-list {
+  margin-top: 50px;
+}
+
+.clients-pengajar {
+  margin-top: 150px;
+  color: #ffc5c4;
+}
+
+.title-clients {
+  font-size: 45px;
+  text-align: center;
+}
+
+.client-uniform-list {
+  text-align: center;
+}
+
+.plist {
+  line-height: 1.2 !important;
+}
+
+.link-list {
+  background-color: #a7242c !important;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: #a7242c;
+  border: 1px solid rgba(255, 250, 250, 0.125);
+}
+
+.page-tentang-pengajar a {
+  color: #ffc5c4 !important;
+}
+
+@media (max-width: 900px) {
+  /* Section pertama */
+  /* .page-tentang-pengajar {
+    height: 610vh;
+  } */
+  .main-div-tentangpengajar {
+    position: relative;
+
+    padding-top: 75px;
+    padding-bottom: 90px;
+
+    /* border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+
+    background-image: url("../img/image-adji.png");
+    background-size: cover;
+    height: 550px;
+    background-repeat: no-repeat;
+  }
+  .inner-tentangpengajar {
+    margin-top: 100px !important;
+    margin: auto;
+    width: 70%;
+  }
+  .content-title-tentangpengajar {
+    font-size: 45px;
+  }
+  #firstname {
+    font-size: 70px !important;
+  }
+  #lastname {
+    margin-top: 15px;
+  }
+
+  /* Section 2 */
+  .image-pengajar {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  ul.isi-portofolio {
+    list-style-position: outside;
+    font-size: 12px;
+  }
+
+  .about-left-tentangpengajar {
+    margin-right: 0px !important;
+  }
+
+  .title-portofolio {
+    text-align: center;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .about-right-tentangpengajar {
+    margin-top: 4 0px;
+    margin-left: 0px;
+    color: #ffc5c4;
+  }
+  /* Section 3 ( Clients) */
+  .client-politicans-list,
+  .client-celebrities-list,
+  .client-celebrities-list,
+  .client-celebrities-list,
+  .client-celebrities-list {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  /* Section pertama */
+  /* .page-tentang-pengajar {
+    height: 580vh;
+  } */
+
+  .inner-tentangpengajar {
+    margin-top: 100px !important;
+    width: 70%;
+  }
+  .content-title-tentangpengajar {
+    font-size: 40px;
+  }
+  #firstname {
+    font-size: 60px !important;
+  }
+  #lastname {
+    margin-top: 15px;
+  }
+
+  /* Section 2 */
+  .image-pengajar {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  ul.isi-portofolio {
+    list-style-position: outside;
+    font-size: 12px;
+  }
+
+  .title-portofolio {
+    text-align: center;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .about-right-tentangpengajar {
+    margin-top: 4 0px;
+    margin-left: 0px;
+    color: #ffc5c4;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Section pertama */
+  /* .page-tentang-pengajar {
+    height: 600vh;
+  } */
+
+  .inner-tentangpengajar {
+    margin-top: 100px !important;
+    width: 70%;
+  }
+  .content-title-tentangpengajar {
+    font-size: 40px;
+  }
+  #firstname {
+    font-size: 60px !important;
+  }
+  #lastname {
+    margin-top: 15px;
+  }
+
+  /* Section 2 */
+  .image-pengajar {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+  ul.isi-portofolio {
+    list-style-position: outside;
+    font-size: 11px;
+  }
+
+  .title-portofolio {
+    text-align: center;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .about-right-tentangpengajar {
+    margin-top: 4 0px;
+    margin-left: 0px;
+    color: #ffc5c4;
+  }
+  /* section 3 */
+  .title-clients {
+    font-size: 40px;
+  }
+  .isi-client-uniform {
+    font-size: 12px !important;
+  }
+  .client-uniform-list,
+  .client-politicans-list,
+  .client-celebrities-list,
+  .client-celebrities-list,
+  .client-celebrities-list,
+  .client-celebrities-list {
+    font-size: 20px;
+  }
+}

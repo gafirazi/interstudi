@@ -1,0 +1,303 @@
+{% extends 'base_sekretaris.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'css/artikel_sekretaris.css' %}">
+<link rel="stylesheet" href="{% static 'css/program_studi_sekretaris.css' %}">
+<style>
+  p{
+    margin-bottom: 0.5rem;
+  }
+
+  .div-aksek{
+    width: 45vw; 
+    margin: auto;
+  }
+
+  @media (max-width: 791px) {
+    .div-aksek{
+      width: 100%; 
+      margin: auto;
+    }
+
+  }
+
+
+</style>
+
+<div
+  class="artikel-hero"
+  style="background-image: url('../static/img/etika_sekretaris_sebagai_representasi_perusahaan.jpg');"
+>
+  <div
+    class="artikel-hero-content"
+  >
+    <h1 class="prodi-title">{{content.title}}</h1>
+    <h2 class="prodi-subtitle">Program {{content.sub_title}}</h2>
+    <p class="prodi-desc">
+      {{content.desc}}
+    </p>
+  </div>
+</div>
+
+
+<div class="container-fluid" style="width: 100%;background-color: white; padding-top: 10vh;margin-top: -13vh;border-top-left-radius: 70px; border-top-right-radius: 70px;">
+
+  <div class="container">
+    
+  <!-- content -->
+
+
+  <div class="sekretaris-junior div-aksek">
+    <h4>Materi perkuliahan Akademi Sekretari InterStudi terdiri dari 46 mata kuliah masing-masing mata kuliah diberikan dalam 14 kali pertemuan. Materi perkuliahan tersebut antara lain meliputi:</h4>
+
+    <ul>
+      {% for materi in content.materi_perkuliahaan %}
+        <li>{{materi}}</li>
+      {% endfor %}
+    </ul>
+
+    <h4>Biaya Formulir Pendaftaran</h4>
+    <br>
+    <div class="row">
+      <div class="col-sm-6" style="height: fit-content !important;">
+        <center><h5>Biaya Formulir Normal</h5></center>
+        <div class="biaya_formulir" style="background-color: #f32aac; border-radius: 20px; margin: auto; padding: 20px 10px; color: white;">
+          <center>Rp. {{content.biaya_formulir_normal}},-</center>
+        </div>
+      </div>
+      <div class="col-sm-6" style="height: fit-content !important;">
+        <center><h5>Biaya Formulir Online</h5></center>
+        <div class="biaya_formulir" style="background-color: #f32aac; border-radius: 20px; margin: auto; padding: 20px 10px; color: white;">
+          <center>Rp. {{content.biaya_formulir_online}},-</center>
+        </div>
+      </div>
+    </div>
+    <br>
+    {{content.keterangan_biaya}}
+
+    <br><br>
+
+    <h4>Informasi Mahasiswa Baru</h4>
+
+    {% for info in content.informasi_mahasiswa_baru %}
+    
+    <div class="jadwal">
+
+      <div class="row">
+        <div class="col-12">
+
+          <h5>{{info.title}}</h5>
+        </div>
+        <div class="col-6">
+          <h5>{{info.sub_left1}}</h5>
+        </div>
+
+        <div class="col-6">
+          <p class="p-right">{{info.sub_right1}}</p>
+        </div>
+
+        <div class="col-6">
+          <h5>{{info.sub_left2}}</h5>
+        </div>
+
+        <div class="col-6">
+          <p class="p-right">{{info.sub_right2}}</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    {% endfor %}
+
+    <div class="jadwal">
+
+      <div class="row">
+
+        {% for seleksi in content.seleksi_mahasiswa %}
+        <div class="col-6">
+          <h5>Gelombang {{forloop.counter}}</h5>
+        </div>
+
+        <div class="col-6">
+          <p class="p-right">{{seleksi}}</p>
+        </div>
+        {% endfor %}
+        
+      </div>
+    </div>
+
+    <br>
+
+    <h4>Syarat Mengikuti Test</h4>
+    <ul>
+      {% for syarat in content.syarat_test %}
+        <li>{{syarat}}</li>
+      {% endfor %}
+    </ul>
+
+    <br>
+
+    <h4>Syarat Diterima Sebagai Mahasiswa Baru</h4>
+    {% for syarat in content.syarat_diterima %}
+      <ul>
+        {% if forloop.counter == 1 %}
+          <li>{{syarat}}
+            <ul>
+              {% for sub_syarat in content.sub_syarat_diterima %}
+                <li>{{sub_syarat}}</li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+          <li>{{syarat}}</li>
+        {% endif %}
+      </ul>
+    {% endfor %}
+    </ul>
+
+    <h4>Biaya Kuliah</h4>
+
+    {% for biaya in content.biaya_kuliah %}
+      <div class="jadwal">
+
+        <div class="row">
+          <div class="col-12">
+
+            <center><h5>{{biaya.title}}</h5></center>
+          </div>
+          <div class="col-6">
+            <h5>{{biaya.sub_left1}}</h5>
+          </div>
+
+          <div class="col-6">
+            <p class="p-right">{{biaya.sub_right1}}</p>
+          </div>
+
+          <div class="col-6">
+            <h5>{{biaya.sub_left2}}</h5>
+          </div>
+
+          <div class="col-6">
+            <p class="p-right">{{biaya.sub_right2}}</p>
+          </div>
+
+          <div class="col-6">
+            <h5>{{biaya.sub_left3}}</h5>
+          </div>
+
+          <div class="col-6">
+            <p class="p-right">{{biaya.sub_right3}}</p>
+          </div>
+
+          <div class="col-6">
+            <h5>{{biaya.sub_left4}}</h5>
+          </div>
+
+          <div class="col-6">
+            <p class="p-right">{{biaya.sub_right4}}</p>
+          </div>
+
+          <div class="col-6">
+            <h5>{{biaya.sub_left5}}</h5>
+          </div>
+
+          <div class="col-6">
+            <p class="p-right">{{biaya.sub_right5}}</p>
+          </div>
+
+          <div class="col-6">
+            <h5>{{biaya.sub_left6}}</h5>
+          </div>
+
+          <div class="col-6">
+            <p class="p-right">{{biaya.sub_right6}}</p>
+          </div>
+
+          <div class="col-6">
+            <h5>{{biaya.sub_left7}}</h5>
+          </div>
+
+          <div class="col-6">
+            <p class="p-right">{{biaya.sub_right7}}</p>
+          </div>
+        </div>
+      </div>
+      <br>
+    {% endfor %}
+
+    <br>
+
+    <h4>Potongan Biaya Studi D3 Reguler & Eksekutif 2020 (Pembayaran Tunai)</h4>
+
+    <h5>Pembayaran Online</h5>
+    <ul>
+      <li>Kelas Reguler 25% x Rp. 19.005.000,- = Rp. 14.253.750</li>
+      <li>Kelas Eksekutif 25% x Rp. 20.105.000,- = Rp. 15.078.750</li>
+    </ul>
+    Pembayaran Kolektif: Potongan 30% untuk minimal 5 orang pendaftar
+    <br>
+    <br>
+
+    <h5>Pendaftaran Tes Masuk</h5>
+    <ul>
+      <li>Online Rp. 150.000,-</li>
+      <li>Offline Rp. 250.000,-</li>
+    </ul>
+
+    <br>
+
+    Bagi pendaftar yang melakukan registrasi ulang (membayar lunas uang kuliah semester pertama) <br>
+    Uang tes masuk akan dikembalikan melalui pemotongan biaya kuliah semester pertama.
+
+    <br>
+
+    <ul>
+      <li>Biaya formulir pendaftaran Rp. 250.000,- (Rp. 150.000,- jika mendaftar online terlebih dahulu)</li>
+      <li>Jumlah SKS untuk semester I (pertama) sesuai paket yang ditetapkan.</li>
+      <li>Jumlah SKS untuk semester selanjutnya, berdasarkan Indeks Prestasi Semester (IPS)</li>
+    </ul>
+
+    <br>
+
+    <h5> Langkah Pendaftaran Program D-3 Sekretari</h5>
+
+    <ol>
+      <li>Pembelian formulir online/offline.</li>
+      <li>Pengambilan kartu tes masuk di kampus.</li>
+      <li>Tes masuk di kampus.</li>
+      <li>Pengumuman hasil tes masuk ke calon siswa.</li>
+      <li>Pendaftaran & pembayaran di kampus.</li>
+      <li>Perkuliahan</li>
+    </ol>
+
+  </div>
+
+
+  <!-- endcontent -->
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <center>
+      <h3>Pendaftaran Online</h3>
+    </center>
+
+    <button
+      class="button-klik-disini"
+      style="
+        display: block;
+        margin: auto;
+        background-color: #f32aac;
+        border-radius: 20px;
+        width: max-content;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+        font-weight: 700;
+        border: none;
+      "
+    >
+      Klik Disini
+  </button>
+    <br /><br /><br />
+  </div>
+</div>
+
+{% endblock content %}

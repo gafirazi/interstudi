@@ -1,0 +1,131 @@
+.page-artikel {
+  /* height: 300vh; */
+  background-color: #92272d;
+  padding-bottom: 100px;
+}
+.main-div-pengajar {
+  position: relative;
+
+  padding-top: 75px;
+  padding-bottom: 90px;
+
+  /* border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px; */
+
+  background-image: url("../img/background-programlainnya.png");
+  background-size: cover;
+  height: 390px;
+  background-repeat: no-repeat;
+}
+
+.content-title-design-artikel1 {
+  text-align: center;
+  line-height: 1;
+  font-size: 50px;
+}
+
+.content-title-design-artikel2 {
+  text-align: center;
+  line-height: 0.7;
+  font-size: 70px;
+}
+.title-design-program {
+  align-items: center;
+  margin-top: 80px;
+}
+
+.pembatas-main-artikel {
+  background-color: #761f25;
+  height: 70px;
+  text-align: center;
+
+  box-shadow: 2px 18px 10px 5px rgba(0, 0, 0, 0.22);
+}
+
+/* konten isi card */
+
+.col-lg-3 {
+  margin-bottom: 50px;
+}
+
+.text-explanation-artikel {
+  color: white !important;
+  transition: 0.3s ease-in-out;
+}
+
+.text-explanation-artikel:hover {
+  transform: scale(1.08);
+
+  transition: 0.3s ease-in-out;
+}
+
+.image-card-artikel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  filter: brightness(0.5);
+  width: 200px;
+  height: 250px;
+
+  box-shadow: -1px 4px 48px 4px rgba(0, 0, 0, 0.2);
+}
+
+.isi-text-artikel {
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.viewmore-artikel {
+  color: white !important;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+.viewmore-artikel:hover {
+  transition: 0.3s ease-in-out;
+  color: #ff1b27 !important;
+  text-decoration: underline;
+}
+
+.card-direct {
+  color: white !important;
+}
+.card-direct:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .page-artikel {
+    height: 1050vh;
+    background-color: #92272d;
+  }
+  .content-title-design-artikel1 {
+    font-size: 40px;
+  }
+
+  .content-title-design-artikel2 {
+    font-size: 60px;
+  }
+  .image-card-artikel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 300px;
+
+    box-shadow: -1px 4px 48px 4px rgba(0, 0, 0, 0.2);
+  }
+  .isi-text-artikel {
+    width: 180px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: -7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

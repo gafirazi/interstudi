@@ -1,0 +1,332 @@
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../font/coolvetica.woff") format("woff"), url("../font/coolvetica.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Coolvetica" !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  color: white !important;
+  font-family: "Coolvetica" !important;
+  font-weight: 300;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  transition: 0.3s ease-in;
+}
+
+.dropdown-item{
+  color: black;
+  font-family: "Coolvetica" !important;
+  font-weight: 300;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  transition: 0.3s ease-in;
+}
+
+.colored{
+  background-color: white;
+  transition: 0.3s ease-in;
+  
+}
+
+.colored-link{
+  color: black !important;
+  transition: 0.3s ease-in;
+}
+
+#hero-jumbotron {
+  height: 100vh;
+  background-image: url("../img/hero_img.jpg");
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.hero-div {
+  display: flex;
+  padding-top: 80px;
+}
+
+.main-button {
+  background-color: #E34CAD;
+  padding: 10px;
+  border-radius: 15px;
+  width: fit-content;
+  color: white;
+  font-weight: 600;
+}
+
+.left-pink-div {
+  background-color: #E34CAD;
+  width: 100%;
+  color: white;
+  padding: 70px 70px;
+}
+
+.program-studi-row {
+}
+
+.program-studi-row {
+  margin: auto !important;
+}
+
+.carousel-inner {
+  width: 70%;
+  margin: auto;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff52df' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff52df' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.col-sm-6 {
+  height: 280px;
+}
+
+.program-studi-size {
+  width: 40vw;
+  height: 250px;
+}
+
+.program-studi-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.program-studi-img {
+  height: max-content;
+}
+
+.white-div{
+  width: 100%;
+  background-color: white; 
+  padding-top: 10vh;
+  margin-top: -13vh;
+  border-top-left-radius: 70px; 
+  border-top-right-radius: 70px;
+}
+.program-studi-desc {
+  width: auto;
+}
+
+.program-studi {
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+
+.program-studi-detail {
+  position: relative;
+}
+
+.pink-behind {
+  display: block;
+  position: relative;
+  top: -245px;
+  left: 5px;
+  z-index: 1;
+  background-color: #E34CAD;
+}
+
+.button-klik-disini{
+  display: block;
+  margin: auto;
+  background-color: #f32aac;
+  border-radius: 20px;
+  width: max-content;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+
+.half-width{
+  width: 55vw;
+}
+
+.faq{
+  width: 50vw; 
+  margin: auto;
+}
+
+.no-desc-hero{
+  height: 60vh !important;
+}
+
+.index-title{
+  padding-top: 20px;
+}
+
+.pendaftaran-online{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-size: cover; 
+  color: white;
+  /* padding-top: 15%;  */
+}
+
+.events-text{
+  width: 40%; 
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.carousel-item{
+  background-size: contain;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar {
+      background: white
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+      color: black !important;
+  }  
+
+  .faq{
+    width: 100%;
+  }
+}
+
+@media (max-width: 791px) {
+  .half-width{
+    width: 100%;      
+  }
+
+  .events-title{
+    font-size: 1.5rem;
+  }
+
+  .events-button{
+    font-size: 0.8rem;
+  }
+
+  .left-pink-div{
+    padding: 30px;
+  }
+
+  .pendaftaran-online{
+    height: 60vh;
+  }
+
+  .events-text{
+    padding: 40px;
+  }
+
+}
+
+@media (max-width: 791px) {
+  .events-title{
+    font-size: 1rem;
+  }
+
+  .events-button{
+    font-size: 0.8rem;
+  }
+
+  .carousel-item{
+    height: 12vh;
+  }
+
+  .events-text{
+    padding: 40px;
+  }
+  #explore-button {
+    display: block;
+    margin: auto;
+    width: fit-content;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .index-title{
+    text-align: center;
+  }
+
+  .main-button{
+    margin: auto;
+  }
+
+  #hero-jumbotron{
+    height: 70vh;
+  }
+
+  .carousel-inner{
+    height: 30vh;
+  }
+
+  .carousel-inner {
+    width: 80%;
+    margin: auto;
+  }
+
+  .list-artikel-div{
+    height: 100%;
+  }
+  
+  .list-artikel{
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+
+}
+
+@media (max-width: 561px) {
+  .events-title{
+    font-size: 1rem;
+  }
+
+  .events-button{
+    font-size: 0.6rem;
+  }
+
+  .carousel-item{
+    height: 9vh;
+  }
+
+  .events-text{
+    padding: 30px;
+  }
+
+}
+
+@media (max-width: 440px) {
+  .events-title{
+    font-size: 0.7rem;
+  }
+
+  .events-button{
+    font-size: 0.4rem;
+  }
+
+  .carousel-item{
+    margin-top: 20px;
+    height: 7vh;
+  }
+
+  .events-text{
+    padding: 20px;
+  }
+
+}
+
+

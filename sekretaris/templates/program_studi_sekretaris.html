@@ -1,0 +1,188 @@
+{% extends 'base_sekretaris.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'css/artikel_sekretaris.css' %}">
+<link rel="stylesheet" href="{% static 'css/program_studi_sekretaris.css' %}">
+
+<div
+  class="artikel-hero"
+  style="height: 90vh; background-image: url('../static/img/etika_sekretaris_sebagai_representasi_perusahaan.jpg'); background-size: cover;"
+>
+  <div
+    class="artikel-hero-content"
+  >
+    <h1 class="prodi-title">{{content.title}}</h1>
+    <h2 class="prodi-subtitle">Program {{content.sub_title}}</h2>
+    <p class="prodi-desc">
+      {{content.desc}}
+    </p>
+  </div>
+</div>
+
+
+<div class="container-fluid white-div">
+
+  <div class="container">
+    
+  <!-- content -->
+
+
+  <div class="program-studi-div">
+    <h4>Lama Studi</h4>
+
+    <p>{{content.lama_studi}}</p>
+
+    <h4>Materi Perkuliahaan:</h3>
+
+    <ul>
+      {% for materi in content.materi_perkuliahaan %}
+      <li>
+        {{materi}}
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h3><center>Jadwal Tahunan</center></h3>
+    <br>
+
+    {% for jadwal in content.jadwal_tahunan %}
+
+    <div class="jadwal">
+
+      <div class="row">
+        
+        <div class="col-6">
+          <h5>Mulai Tanggal</h5>
+        </div>
+
+        <div class="col-6">
+          <p class="p-right">{{jadwal.mulai_tanggal}}</p>
+        </div>
+
+        <div class="col-6">
+          <h5>Angkatan</h5>
+        </div>
+
+        <div class="col-6">
+          <p class="p-right">{{jadwal.angkatan}}</p>
+        </div>
+
+        <div class="col-6">
+          <h5>Hari Belajar</h5>
+        </div>
+
+        <div class="col-6">
+          <p class="p-right">{{jadwal.hari_belajar}}</p>
+        </div>
+
+        <div class="col-6">
+          <h5>Waktu</h5>
+        </div>
+
+        <div class="col-6">
+          <p class="p-right" style="font-size: 14px;">{{jadwal.waktu}}</p>
+        </div>
+
+        <div class="col-6">
+          <h5>Tempat</h5>
+        </div>
+
+        <div class="col-6">
+          <p class="p-right">{{jadwal.tempat}}</p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    {% endfor %}
+
+    <br><br><br>
+
+    <h3><center>Biaya Pendaftaran</center></h3>
+
+    <br>
+
+    <div class="program-studi-div">
+      <div class="row">
+
+        <br><br>
+        <div class="col-sm-6 jadwal-div">
+          <center>
+
+            <h5>Pendaftaran di kampus</h5>
+            <br>
+            <div class="jadwal">
+              {% if is_eksekutif %}
+              <h5>Tunai</h5>
+              <br>
+              <strike><h5>Rp. {{content.biaya_pendaftaran_kampus.potongan}},-</h5></strike>
+              <h5>Rp. {{content.biaya_pendaftaran_kampus.tunai}},-</h5>
+              {% else %}
+
+              <h5>Tunai</h5>
+              <h5>Rp. {{content.biaya_pendaftaran_kampus.tunai}},-</h5>
+    
+              <br>
+              
+              <h5>{{content.biaya_pendaftaran_kampus.lama_angsuran}}x Angsuran *</h5>
+              <h5>Rp. {{content.biaya_pendaftaran_kampus.angsuran}},-</h5>
+
+              {% endif %}
+            </div>
+          </center>
+        </div>
+
+        <br><br>
+        <div class="col-sm-6 jadwal-div">
+          <center>
+
+            <h5>Pendaftaran via Online</h5>
+            <br>
+            <div class="jadwal">
+              {% if is_eksekutif %}
+              <h5>Tunai</h5>
+              <br>
+              <strike><h5>Rp. {{content.biaya_pendaftaran_online.potongan}},-</h5></strike>
+              <h5>Rp. {{content.biaya_pendaftaran_online.tunai}},-</h5>
+              {% else %}
+
+              <h5>Tunai</h5>
+              <h5>Rp. {{content.biaya_pendaftaran_online.tunai}},-</h5>
+    
+              <br>
+              
+              <h5>{{content.biaya_pendaftaran_online.lama_angsuran}}x Angsuran *</h5>
+              <h5>Rp. {{content.biaya_pendaftaran_online.angsuran}},-</h5>
+
+              {% endif %}
+            </div>
+          </div>
+          </center>
+
+      </div>
+    </div>
+
+    <br><br><br><br>
+    <center>
+      <p>{{content.keterangan|safe}}</p>
+    </center>
+  </div>
+
+
+  <!-- endcontent -->
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <center>
+      <h3>Pendaftaran Online</h3>
+    </center>
+
+    <button
+      class="button-klik-disini"
+    >
+      Klik Disini
+    </button>
+    <br /><br /><br />
+  </div>
+</div>
+
+{% endblock content %}

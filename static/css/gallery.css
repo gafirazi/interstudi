@@ -1,0 +1,86 @@
+.page-gallery {
+  background-color: #fafafa;
+  height: 200vh;
+
+  overflow: hidden;
+}
+
+.main-div-gallery {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 90px;
+  background-image: url("../img/background-programlainnya.png");
+  background-size: cover;
+  height: 280px;
+  background-repeat: no-repeat;
+}
+.pembatas-main {
+  position: relative;
+  background-color: #ffffff;
+  height: 60px;
+  text-align: center;
+  margin-top: -40px;
+
+  border-radius: 40px 40px 0px 0px;
+}
+
+/* Section gallery */
+.title-gallery {
+  text-align: center;
+  color: #ffba02;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 30px;
+}
+
+.center {
+  padding-top: 40px;
+  margin: auto;
+  width: 100%;
+}
+
+.card-img {
+  margin: auto;
+  width: 330px;
+  height: 300px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.img-style-gallery {
+  padding-top: 20px;
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.text-desc-gallery {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+}
+@media (max-width: 400px) {
+  .card-img {
+    width: 88%;
+    height: auto;
+
+    padding-bottom: 10px;
+  }
+  .img-style-gallery {
+    width: 84%;
+  }
+  .page-gallery {
+    background-color: #fafafa;
+    height: 320vh !important;
+
+    overflow: hidden;
+  }
+}
+@media (max-width: 900px) {
+  .page-gallery {
+    background-color: #fafafa;
+    height: 370vh !important;
+
+    overflow: hidden;
+  }
+}

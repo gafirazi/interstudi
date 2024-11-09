@@ -1,0 +1,127 @@
+.page-eventsem {
+  /* height: 520vh; */
+  background-color: #92272d;
+  padding-bottom: 100px;
+}
+
+.main-div-eventint {
+  position: relative;
+
+  padding-top: 75px;
+  padding-bottom: 90px;
+
+  /* border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px; */
+
+  background-image: url("../img/image-adji.png");
+  background-size: cover;
+  height: 390px;
+  background-repeat: no-repeat;
+}
+.title-design-eventin {
+  align-items: center;
+  margin-top: 80px;
+}
+.content-title-design-eventint {
+  text-align: center;
+  line-height: 1;
+  font-size: 50px;
+}
+
+.pembatas-main-detailartikel {
+  background-color: #761f25;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+/* image control */
+.itemimg {
+  display: flex !important;
+  flex-direction: row;
+}
+
+.w-50 {
+  margin-right: 30px;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.title-main-eventint {
+  color: white;
+  font-size: 30px;
+  padding-top: 30px;
+  font-weight: 1000;
+}
+.konten-isi-detailartikel {
+  margin-top: 100px;
+}
+.isidetail-konten {
+  text-align: justify;
+  font-size: 17px;
+  color: white;
+}
+
+.title-kind-fashionshow {
+  font-size: 38px;
+  color: white;
+}
+.carousel-indicators li {
+  background-color: #420f12;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.carousel-indicators {
+  bottom: -50px;
+}
+.bagiankedua {
+  margin-top: 100px;
+}
+
+.bagianketiga {
+  margin-top: 70px;
+}
+.bagianempat {
+  margin-top: 70px;
+}
+.caraousel-one {
+  margin-top: 50px;
+}
+
+#carousel-1 {
+  margin-top: 20px;
+}
+
+#carousel-2 {
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .page-eventsem {
+    /* height: 850vh; */
+    background-color: #92272d;
+  }
+  .content-title-design-eventint {
+    font-size: 45px;
+  }
+  .title-main-eventint {
+    font-size: 6vw;
+  }
+  .title-kind-fashionshow {
+    font-size: 6vw;
+  }
+  p {
+    font-size: 3vw;
+  }
+  .konten-isi-detailartikel {
+    margin-top: 50px;
+  }
+  .image-eventsem {
+    height: auto;
+    margin-bottom: 30px;
+  }
+}

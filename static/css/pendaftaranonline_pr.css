@@ -1,0 +1,257 @@
+.page-faq {
+  background-color: #fafafa;
+  min-height: 180vh;
+  padding-bottom: 100px;
+}
+.main-div-pengajar {
+  position: relative;
+
+  padding-top: 75px;
+  padding-bottom: 90px;
+
+  background-image: url("../img/background-programlainnya.png");
+  background-size: cover;
+  height: 280px;
+  background-repeat: no-repeat;
+}
+.title-pendaftaran {
+  color: #ffba02;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+.pembatas-main {
+  position: relative;
+  background-color: #ffffff;
+  height: 60px;
+  text-align: center;
+  margin-top: -40px;
+
+  border-radius: 40px 40px 0px 0px;
+}
+.title-div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.title-inner {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content-title-design-faq {
+  text-align: right;
+  line-height: 0.7;
+  font-size: 70px;
+  margin-top: 50px;
+  color: #eb0f28;
+}
+
+/* section card  */
+
+.card-faq {
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 50px;
+  height: auto;
+  width: 40%;
+
+  box-shadow: 2px 18px 13px 5px rgba(0, 0, 0, 0.22);
+}
+
+/* form faq */
+.faq-form {
+  padding: 40px;
+  color: #0a0909;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.faq-form input,
+.faq-form textarea,
+.faq-form select {
+  border-color: #000000;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #effa8f;
+  transition: all 0.4s ease-in-out;
+}
+
+::-webkit-input-placeholder,
+option,
+select {
+  font-weight: 1000;
+  color: black;
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+.faq-button {
+  border: none;
+  background-color: #ffca3c;
+
+  padding: 10px 20px;
+  color: black;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 10%;
+  margin: auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.faq-button:hover {
+  transform: translateY(-10px);
+  transition: all 0.4s ease-in-out;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Radio button  */
+.container {
+  color: white;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ec5f5f;
+  transition: all 0.4s ease-in-out;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ef1011;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Radio button  */
+
+@media (max-width: 1000px) {
+  .card-faq {
+    width: 50%;
+  }
+  ::-webkit-input-placeholder,
+  option,
+  select {
+    font-size: 14px;
+  }
+  .faq-button {
+    width: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-faq {
+    width: 50%;
+  }
+  ::-webkit-input-placeholder,
+  option,
+  select {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-faq {
+    width: 60%;
+  }
+  ::-webkit-input-placeholder,
+  option,
+  select {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-faq {
+    width: 90%;
+  }
+  ::-webkit-input-placeholder,
+  option,
+  select {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,63 @@
+.main-faq-div {
+  position: relative;
+  z-index: 1;
+  padding-top: 125px;
+  padding-bottom: 90px;
+
+  background-image: url("../img/faq-bg.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+.faq-white-div {
+  box-shadow: -1px 3px 28px 4px rgba(0, 0, 0, 0.62);
+  margin: auto;
+  width: 70%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.faq-form {
+  padding: 40px;
+  color: #0000ff;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+.faq-form input, .faq-form textarea{
+  border-color: #0000ff;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.faq-form textarea{
+  border-width: 2px;
+}
+
+.faq-button {
+  border: none;
+  background-color: #0000ff;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 100%;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.faq-button:hover {
+  transform: translateY(-10px);
+  transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 955px) {
+  .faq-form {
+    width: 100%;
+  }
+
+}

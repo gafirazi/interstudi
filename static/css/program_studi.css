@@ -1,0 +1,103 @@
+.col-sm-6 ul li {
+  font-size: 12px !important;
+}
+
+.main-pg-div {
+  background-image: url("../img/bg_program_studi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title-pg-inner {
+  padding-top: 180px;
+  margin: auto;
+  width: 70%;
+  color: white;
+  text-align: center;
+}
+
+.title-pg-inner h1 {
+  font-size: 90px;
+}
+
+.program-studi {
+  background-image: linear-gradient(to bottom right, #6338e8, #2f94f4);
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#materi_pengajar {
+  background-color: white;
+  box-shadow: 0px 7px 27px -8px rgba(0, 0, 0, 0.75);
+  /* padding: 20px; */
+}
+
+#materi_pengajar_left,
+#kompetensi_left {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#materi_pengajar_right {
+  padding: 20px;
+}
+
+#materi_pengajar_right h4 {
+  font-size: 36px;
+  margin-left: 20px;
+}
+
+#kompetensi_right {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#kompetensi_right h6 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+#kompetensi,
+#prospek {
+  /* border-radius: 10px !important; */
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0px 7px 27px -8px rgba(0, 0, 0, 0.75);
+}
+
+.image-kompetensi {
+  /* border-radius: 10px !important; */
+}
+
+@media (max-width: 571px) {
+  .image-kompetensi {
+    margin-top: 20px;
+    width: 100% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  #kompetensi,
+  #prospek {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    /* min-width: 300px !important; */
+  }
+
+  .title-pg-inner h1 {
+    font-size: 40px;
+  }
+}

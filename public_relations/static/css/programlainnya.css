@@ -1,0 +1,166 @@
+.page-programlainnya {
+  background-color: #fafafa;
+  padding-bottom: 100px;
+}
+
+.main-div-pengajar {
+  position: relative;
+
+  padding-top: 75px;
+  padding-bottom: 90px;
+
+  background-image: url("../img/background-programlainnya.png");
+  background-size: cover;
+  height: 280px;
+  background-repeat: no-repeat;
+}
+
+.pembatas-main {
+  position: relative;
+  background-color: #ffffff;
+  height: 60px;
+  text-align: center;
+  margin-top: -40px;
+
+  border-radius: 40px 40px 0px 0px;
+}
+
+.title-programlainnya {
+  color: #ffba02;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+/* kumpulan card- card  */
+.list-card {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.card-interstudi {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #ff52df;
+  border-radius: 50px;
+  height: 350px;
+  width: 700px;
+  margin-bottom: 50px;
+}
+#card2 {
+  background-color: #ff9c44;
+}
+#card3 {
+  background-image: linear-gradient(to right, #3263fe, #9907fe);
+  border-radius: 50px;
+}
+
+.kolom-penjelasan {
+  text-align: left;
+}
+
+#card3 {
+  background-image: linear-gradient(to right, #3263fe, #9907fe);
+}
+
+#card4 {
+  background-color: #11db9f;
+}
+#card5 {
+  background-color: #ffb900;
+}
+#card6 {
+  background-color: #187dc3;
+}
+#card7 {
+  background-color: #105036;
+}
+#card8 {
+  background-color: #848484;
+}
+.isi-kolom-penjelasan {
+  margin-top: 50px;
+  margin-left: 30px;
+
+  position: relative;
+}
+
+.view-more-card {
+  position: relative;
+  bottom: 0;
+  right: 0;
+
+  text-align: right;
+  bottom: 0;
+  margin-top: 30px;
+
+  font-weight: 1000;
+  transition: all 0.4s ease-in-out;
+}
+
+.view-more-card:hover {
+  transform: translateY(-15px);
+  transition: all 0.4s ease-in-out;
+}
+
+.text-view {
+  color: white !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.text-view:hover {
+  transform: translateY(-15px);
+  transition: all 0.4s ease-in-out;
+  color: white !important;
+}
+
+.title-program-card {
+  font-weight: bolder;
+  font-size: 24px;
+}
+#test-subtitle {
+  font-weight: bolder;
+  font-size: 44px;
+}
+
+.penjelasan-program-studi {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .content-title-design-programlainnya {
+    font-size: 45px;
+  }
+  .card-interstudi {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #ff52df;
+    border-radius: 50px;
+    height: 350px;
+    width: auto;
+    margin-bottom: 50px;
+  }
+  .title-program-card {
+    font-weight: bolder;
+    font-size: 24px;
+  }
+  .view-more-card {
+    position: relative;
+    bottom: 0;
+    right: 0;
+
+    text-align: right;
+    bottom: 0;
+    margin-top: 30px;
+
+    font-weight: 1000;
+    transition: all 0.4s ease-in-out;
+    margin-right: 20px;
+  }
+  .penjelasan-program-studi {
+    font-size: 12px;
+  }
+}

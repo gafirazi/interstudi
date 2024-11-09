@@ -1,0 +1,56 @@
+{% extends 'base_sekretaris.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'css/artikel_sekretaris.css' %}">
+
+<div
+  class="artikel-hero no-desc-hero"
+  style="background-image: url('../static/img/faq.jpg');"
+>
+  <div
+    class="artikel-hero-content"
+  >
+    <h1>Hubungi Kami</h1>
+    
+  </div>
+</div>
+
+
+<div class="container-fluid white-div">
+<div class="container">
+  
+  <div class="faq">
+    <center>
+      <h3>Hubungi Kami</h3>
+      <p>Ada pertanyaan mengenai program studi? Kirim pertanyaan anda melalui form dibawah ini</p>
+  
+      <b><span>Nama</span></b><br>
+      <input class="form-control" type="text" name="" id="" style="width: 70%;">
+      <br>
+  
+      <b><span>Email</span></b><br>
+      <input class="form-control" type="text" name="" id="" style="width: 70%;">
+      <br>
+  
+      <b><span>Judul</span></b><br>
+      <input class="form-control" type="text" name="" id="" style="width: 70%;">
+      <br>
+  
+      <b><span>Pertanyaan</span></b><br>
+      <textarea class="form-control" name="" id="" cols="30" rows="10" style="width: 70%;"></textarea>
+      <br>
+  
+      <br>
+  
+      <button
+        class="button-klik-disini"
+      >
+        Kirim
+      </button>
+      <br><br>
+    </center>
+  
+  </div>
+
+</div>
+</div>
+
+{% endblock content %}

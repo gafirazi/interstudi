@@ -1,0 +1,136 @@
+{% extends 'base_sekretaris.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'css/artikel_sekretaris.css' %}">
+<div
+  class="artikel-hero no-desc-hero"
+  style="background-image: url('../static/img/faq.jpg');"
+>
+  <div
+    class="artikel-hero-content"
+  >
+    <h1>Pendaftaran Online</h1>
+    
+  </div>
+</div>
+
+<div class="container-fluid white-div">
+<div class="container">
+  
+  <div class="faq">
+    <center>
+      <h3>Pendaftaran Online</h3>
+      <br>
+
+      <b><span>Program Studi</span></b>
+      <div class="form-group">
+        <select class="form-control" name="program-studi" id="exampleFormControlSelect1" style="width: 70%;" onchange="changeData(event.target)">
+          <option disabled selected>
+            Pilih Program Studi
+          </option>
+          <option value="as">Akademi Sekretari (D3 Sekretari)</option>
+          <option value="sj">Sekretari Junior (1 Tahun)</option>
+          <option value="sk">Sekretari Kantor (6 Bulan)</option>
+          <option value="se">Sekretari Eksekutif (3 Bulan)</option>
+        </select>
+      </div>
+
+      <b><span>Jadwal Studi</span></b>
+      <div class="form-group">
+        <select class="form-control" id="jadwal-studi" style="width: 70%;">
+          <option disabled selected>
+            Pilih Program Studi terlebih dahulu
+          </option>
+        </select>
+      </div>
+  
+      <b><span>Nama Lengkap</span></b><br>
+      <input class="form-control" type="text" name="" id="" style="width: 70%;">
+      <br>
+  
+      <b><span>Email</span></b><br>
+      <input class="form-control" type="text" name="" id="" style="width: 70%;">
+      <br>
+  
+      <b><span>No telepon</span></b><br>
+      <input class="form-control" type="text" name="" id="" style="width: 70%;">
+      <br>
+
+
+      <b><span>Jenis Kelamin</span></b>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Laki-laki
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Perempuan
+        </label>
+      </div>
+      <br>
+
+      <b><span>Tanggal Lahir</span></b><br>
+      <input class="form-control" type="date" name="" id="" style="width: 70%;">
+      <br>
+
+      <b><span>Alamat</span></b><br>
+      <input class="form-control" type="text" name="" id="" style="width: 70%;">
+      <br>
+
+
+      <b><span>Pertanyaan</span></b><br>
+      <textarea class="form-control" name="" id="" cols="30" rows="10" style="width: 70%;"></textarea>
+      <br>
+  
+      <br>
+  
+      <button
+        class="button-klik-disini"
+        style="
+          display: block;
+          margin: auto;
+          background-color: #f32aac;
+          border-radius: 20px;
+          width: max-content;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          color: white;
+          font-weight: 700;
+          border: none;
+        "
+      >
+        Kirim
+      </button>
+      <br><br>
+    </center>
+  
+  </div>
+
+</div>
+</div>
+
+<script>
+  let jadwalStudi = document.getElementById("jadwal-studi");
+  function changeData(item) {
+    if(item.name == "program-studi"){
+      if(item.value == "as"){
+        
+      }
+      else if(item.value == "sj"){
+        
+      }
+      else if(item.value == "sk"){
+        
+      }
+      else if(item.value == "se"){
+        
+      }
+      document.getElementById()
+    }
+  }
+</script>
+
+{% endblock content %}

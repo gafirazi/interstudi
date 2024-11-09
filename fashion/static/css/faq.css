@@ -1,0 +1,175 @@
+.page-faq {
+  min-height: 150vh;
+  background-color: #a7242c;
+  padding-bottom: 100px;
+}
+.main-div-faq {
+  position: relative;
+
+  padding-top: 75px;
+  padding-bottom: 90px;
+
+  /* border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+
+  background-image: url("../img/faq.png");
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.title-div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.title-inner {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content-title-design-faq {
+  text-align: right;
+  line-height: 0.7;
+  font-size: 70px;
+  margin-top: 50px;
+}
+
+.card-faq {
+  margin-top: 70px;
+  display: inline-block;
+  background-color: #ae1c1d;
+  border-radius: 50px;
+  height: 550px;
+  width: 550px;
+  margin-bottom: 50px;
+
+  box-shadow: 2px 18px 13px 5px rgba(0, 0, 0, 0.22);
+}
+.dotfaq {
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #862324;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* form faq */
+.faq-form {
+  padding: 40px;
+  color: #862324;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.faq-form input {
+  border-color: #862324;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+input:focus {
+  background-color: #fbcbc6;
+  transition: all 0.4s ease-in-out;
+}
+::-webkit-input-placeholder {
+  font-weight: 1000;
+  color: #d3515a;
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+.faq-button {
+  border: none;
+  background-color: #ef1011;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 40%;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.faq-button:hover {
+  transform: translateY(-10px);
+  transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .page-faq {
+    background-color: #a7242c;
+  }
+  .content-title-design-faq {
+    text-align: right;
+    line-height: 0.7;
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  .card-faq {
+    margin-top: 70px;
+    display: inline-block;
+    background-color: #ae1c1d;
+    border-radius: 50px;
+    height: 500px;
+    width: 450px;
+    margin-bottom: 50px;
+
+    box-shadow: 2px 18px 13px 5px rgba(0, 0, 0, 0.22);
+  }
+}
+@media (max-width: 600px) {
+  .content-title-design-faq {
+    margin-top: 50px;
+  }
+  .card-faq {
+    height: 520px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-faq {
+    height: 470px;
+    width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .card-faq {
+    margin-top: 70px;
+
+    height: 500px;
+    width: 300px;
+    margin-bottom: 50px;
+
+    box-shadow: 2px 18px 13px 5px rgba(0, 0, 0, 0.22);
+  }
+  .faq-button {
+    width: 60%;
+  }
+}

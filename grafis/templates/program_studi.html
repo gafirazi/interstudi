@@ -1,0 +1,106 @@
+{% extends 'base_grafis.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'css/program_studi.css' %}" />
+
+<div class="main-pg-div">
+  <div class="title-div">
+    <div class="title-pg-inner">
+      <h1>Program</h1>
+      <h1>Studi</h1>
+    </div>
+  </div>
+  <br /><br />
+  <img
+    src="{% static 'img/white_artwork.png' %}"
+    class="white-artwork"
+    alt=""
+  />
+  <br /><br />
+</div>
+
+<div class="program-studi" style="padding-bottom: 150px">
+  <div class="container">
+    <div class="row" id="materi_pengajar">
+      <div class="col-sm-6" id="materi_pengajar_left">
+        <img src="{% static 'img/materi_pengajar.png' %}" style="width: 100%" />
+      </div>
+      <div class="col-sm-6" id="materi_pengajar_right">
+        <h4>Materi Pengajar</h4>
+        <div class="row">
+          <div class="col-sm-6">
+            <ul>
+              <li>Typography & Lay out</li>
+              <li>Computer Graphic 1 (Freehand)</li>
+              <li>Basic Drawing</li>
+              <li>Prinsip Desain</li>
+              <li>Desain Fotografi</li>
+              <li>Logotype Design & Applications</li>
+              <li>Computer Graphic 2 (Photoshop)</li>
+              <li>Illustration</li>
+              <li>Digital Illustration</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul>
+              <li>Computer Graphic 3 (Indesign)</li>
+              <li>Promotional Design</li>
+              <li>Digital Print</li>
+              <li>Publication Design</li>
+              <li>Advertising</li>
+              <li>Managemen Desain</li>
+              <li>Computer Graphic 4 (Mac Flash)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="row" id="komp_prospek">
+      <div class="col-sm-5" id="kompetensi">
+        <div class="row">
+          <div class="col-sm-6" id="kompetensi_left">
+            <img
+              src="{% static 'img/bg_kompetensi.png' %}"
+              style="width: 100%"
+              alt=""
+              class="image-kompetensi"
+            />
+          </div>
+          <div class="col-sm-6" id="kompetensi_right">
+            <h6>Kompetensi</h6>
+            <ul>
+              <li>Graphic designer</li>
+              <li>Advertising agency officer</li>
+              <li>Broadcasting staff</li>
+              <li>Menjalankan bisnis printing dan packaging</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-5" id="prospek">
+        <div class="row">
+          <div class="col-sm-6" id="kompetensi_left">
+            <img
+              src="{% static 'img/bg_kompetensi.png' %}"
+              style="width: 100%"
+              alt=""
+              class="image-kompetensi"
+            />
+          </div>
+          <div class="col-sm-6" id="kompetensi_right">
+            <h6>Prospek Karir</h6>
+            <ul>
+              <li>Printing & publishing</li>
+              <li>Agensi periklanan</li>
+              <li>Dunia broadcasting</li>
+              <li>Production house.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

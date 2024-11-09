@@ -1,0 +1,28 @@
+{% extends 'base_fashion.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'css/detailartikel.css' %}" />
+
+<div style="height: 300vh; background-color: #92272d">
+  <div class="main-div-detailartikel">
+    <div class="title-div">
+      <div class="title-inner">
+        <div class="title-design-detailartikel">
+          <h1>{{ artikel.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="pembatas-main-detailartikel">
+    <p class="title-main-isiartikel">Tips Menggunakan Pakaian Baru</p>
+  </div> -->
+
+  <div class="konten-isi-detailartikel">
+    <div class="container isidetail-konten">
+      <p>
+        {{ artikel.content|safe }}
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

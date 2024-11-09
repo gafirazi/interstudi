@@ -1,0 +1,60 @@
+{% extends 'base_pr.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'css/pendaftaranonline_pr.css' %}" />
+
+<div class="page-faq">
+  <div class="main-div-pengajar"></div>
+  <div class="pembatas-main"></div>
+  <h1 class="title-pendaftaran">Pendaftaran Online</h1>
+  <div class="card-faq">
+    <div class="faq-form">
+      <input type="text" name="" id="" placeholder="Program Studi" />
+      <br /><br />
+      <input
+        placeholder="Jadwal Studi"
+        class="textbox-n"
+        type="text"
+        onfocus="(this.type='date')"
+        id="date"
+      />
+      <br /><br />
+      <input
+        placeholder="Tanggal Lahir"
+        onfocus="(this.type='time')"
+        id="appt"
+        name="appt"
+        min="09:00"
+        max="18:00"
+        required
+      />
+      <br /><br />
+      <input type="text" name="" id="" placeholder="Biaya Studi" />
+      <br /><br />
+      <input type="text" name="" id="" placeholder="Nama Studi" />
+      <br /><br />
+      <textarea rows="3" placeholder="Alamat Lengkap"></textarea>
+      <br /><br />
+      <input
+        placeholder="Tanggal Lahir"
+        class="textbox-n"
+        type="text"
+        onfocus="(this.type='date')"
+        id="date"
+      />
+      <br /><br />
+      <input type="text" name="" id="" placeholder="Email" />
+      <br /><br />
+      <select>
+        <option value="" disabled selected>Jenis Kelamin</option>
+        <option value="Laki">Laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+      <br /><br />
+    </div>
+  </div>
+  <div class="center">
+    <button type="submit" class="faq-button">SUBMIT</button>
+  </div>
+</div>
+
+{% endblock content %}

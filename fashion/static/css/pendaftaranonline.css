@@ -1,0 +1,258 @@
+.page-faq {
+  background-color: #a7242c;
+  min-height: 180vh;
+  padding-bottom: 100px;
+}
+.main-div-faq {
+  position: relative;
+
+  padding-top: 75px;
+  padding-bottom: 90px;
+
+  /* border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px; */
+
+  background-image: url("../img/faq.png");
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.title-div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.title-inner {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content-title-design-faq {
+  text-align: right;
+  line-height: 0.7;
+  font-size: 70px;
+  margin-top: 50px;
+}
+
+.card-faq {
+  margin-top: 70px;
+  display: inline-block;
+  background-color: #ae1c1d;
+  border-radius: 50px;
+  height: auto;
+  width: 550px;
+  margin-bottom: 50px;
+
+  box-shadow: 2px 18px 13px 5px rgba(0, 0, 0, 0.22);
+}
+.dotfaq {
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #862324;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* form faq */
+.faq-form {
+  padding: 40px;
+  color: #862324;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.faq-form input,
+.faq-form textarea,
+.faq-form select {
+  border-color: #862324;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #fbcbc6;
+  transition: all 0.4s ease-in-out;
+}
+
+::-webkit-input-placeholder,
+option,
+select {
+  font-weight: 1000;
+  color: #d3515a;
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+.faq-button {
+  border: none;
+  background-color: #ef1011;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 40%;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.faq-button:hover {
+  transform: translateY(-10px);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Radio button  */
+.container {
+  color: white;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ec5f5f;
+  transition: all 0.4s ease-in-out;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ef1011;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Radio button  */
+
+
+@media (max-width: 800px) {
+  .page-faq {
+    background-color: #a7242c;
+  }
+  .content-title-design-faq {
+    text-align: right;
+    line-height: 0.7;
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  .card-faq {
+    margin-top: 70px;
+    display: inline-block;
+    background-color: #ae1c1d;
+    border-radius: 50px;
+    height: 500px;
+    width: 450px;
+    margin-bottom: 50px;
+
+    box-shadow: 2px 18px 13px 5px rgba(0, 0, 0, 0.22);
+  }
+}
+@media (max-width: 1000px) {
+  .page-faq {
+    background-color: #a7242c;
+  }
+  .content-title-design-faq {
+    margin-top: 50px;
+  }
+  .card-faq {
+    height: auto;
+    width: 450px;
+  }
+}
+
+@media (max-width: 700px) {
+  .card-faq {
+    height: auto;
+    width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    font-size: 16px;
+  }
+  .card-faq {
+    margin-top: 70px;
+
+    height: auto;
+    width: 300px;
+    margin-bottom: 50px;
+
+    box-shadow: 2px 18px 13px 5px rgba(0, 0, 0, 0.22);
+  }
+  .faq-button {
+    width: 60%;
+  }
+}

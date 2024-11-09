@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index_sekretaris.css' %}" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg fixed-top py-3 navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'img/logo_interstudi_sekretaris.png' %}"
+          height="30"
+          width="30"
+          alt=""
+      /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Program Studi
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{% url 'program_studi' nama_prodi='akademi_sekretari' %}">Akademi Sekretari (Program D3 Sekretari)</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{% url 'program_studi' nama_prodi='sekretaris_junior' %}">Sekretaris Junior (1 Tahun)</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{% url 'program_studi' nama_prodi='sekretaris_kantor' %}">Sekretaris Kantor (6 bulan)</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{% url 'program_studi' nama_prodi='sekretaris_eksekutif' %}">Sekretaris Eksekutif (3 bulan)</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Event
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{% url 'workshop' %}">Workshop</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{% url 'seminar' %}">Seminar</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'list_artikel' %}">Artikel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'pendaftaran_online' %}">Pendaftaran Online</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'hubungi_kami' %}">Hubungi Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'program_lainnya' %}">Program Lainnya</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    {% block content %} {% endblock %}
+
+    <footer
+      class="page-footer font-small mdb-color lighten-3 pt-4"
+      style="background-image: url('/static/img/footer.png'); color: white;"
+    >
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+            <!-- Content -->
+            <img
+              src="{% static 'img/logo_interstudi_sekretaris.png' %}"
+              style="width: 100px;"
+              alt="halo halo bandung"
+              id="iconFooter"
+            />
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <!-- Links -->
+            <h5 class="font-weight-bold mb-4">Hubungi Kami</h5>
+
+            <ul class="list-unstyled listFooter">
+              <li>
+                <p>Jl. Bulungan I No. 6</p>
+              </li>
+              <li>
+                <p>Kebayoran Baru</p>
+              </li>
+              <li>
+                <p>Jakarta Selatan</p>
+              </li>
+              <li>
+                <p>Tlp : (021) 7250437</p>
+              </li>
+              <li>
+                <p>Fax : (021)</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <!-- Contact details -->
+            <h5 class="font-weight-bold mb-4">
+              Jam Operasional
+            </h5>
+
+            <ul class="list-unstyled listFooter">
+              <li>
+                <p>Senin s/d Jumat</p>
+              </li>
+              <li>
+                <p>Pukul 8.30am-19.30pm</p>
+              </li>
+              <li>
+                <p>Sabtu</p>
+              </li>
+              <li>
+                <p>Libur</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+            <!-- Social buttons -->
+            <h5 class="font-weight-bold mb-4">Ikuti Kami</h5>
+
+
+            <!-- Instagram -->
+            <a type="button" class="btn-floating btn-instagram">
+              <a href="https://www.instagram.com/interstudi/" style="text-decoration: none; border: none; color: white; font-size: 25px;">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </a>
+            <a type="button" class="btn-floating btn-instagram">
+              <a href="https://www.facebook.com/interstudieducation/" style="text-decoration: none; border: none; color: white; font-size: 25px;">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </a>
+            <a type="button" class="btn-floating btn-instagram">
+              <a href="https://twitter.com/interstudi" style="text-decoration: none; border: none; color: white; font-size: 25px;">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </a>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('colored');
+            $('.nav-link').addClass('colored-link');
+        } else {
+            $('.navbar').removeClass('colored');
+            $('.nav-link').removeClass('colored-link');
+        }
+    });
+});
+</script>
+  </body>
+</html>

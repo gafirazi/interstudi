@@ -1,0 +1,70 @@
+{% extends 'base_sekretaris.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'css/artikel_sekretaris.css' %}">
+<link rel="stylesheet" href="{% static 'css/list_artikel.css' %}">
+</style>
+<div
+  class="artikel-hero"
+  style="background-image: url('../static/img/etika_sekretaris_sebagai_representasi_perusahaan.jpg');"
+>
+  <div
+    class="artikel-hero-content"
+  >
+    <img src="{% static 'img/logo_interstudi.png' %}" style="width: 100px;" alt="">
+    <h1>Artikel</h1>
+    
+  </div>
+</div>
+
+
+<div class="container-fluid white-div">
+
+<div class="container">
+  
+  <!-- content -->
+
+
+  <div class="list-artikels">
+    <center><h4>Artikel Sekretaris</h4></center>
+
+    <br><br>
+
+    <div class="container">
+
+
+      <div class="row">
+
+        {% for key, value in artikels.items %}
+
+        <div class="col-lg-4" >
+          <div class="artikel-div">
+            <img src="{% static 'img/'|add:key|add:'.jpg' %}" style="object-fit: cover; width: 50%; height: 100%; margin-left: -10px;" alt="">
+            <div class="artikel-right" style="padding-top: 10px;">
+              <h6>{{value.title}}</h6>
+              <a href="artikel/{{key}}" style="color: #f32aac; bottom: 40px; right: 20%; position: absolute; text-decoration: none; border: none;"><b>View More</b></a>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+
+
+  <!-- endcontent -->
+
+
+  <br /><br /><br /><br /><br /><br /><br /><br />
+  <center>
+    <h3><b>Pendaftaran Online</b></h3>
+  </center>
+
+  <button
+    class="button-klik-disini"
+  >
+    Klik Disini
+</button>
+  <br /><br /><br />
+</div>
+</div>
+{% endblock content %}

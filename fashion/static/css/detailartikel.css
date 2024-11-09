@@ -1,0 +1,56 @@
+.main-div-detailartikel {
+  position: relative;
+
+  padding-top: 75px;
+  padding-bottom: 90px;
+
+  /* border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px; */
+
+  background-image: url("../img/image-adji.png");
+  background-size: cover;
+  height: 390px;
+  background-repeat: no-repeat;
+}
+.title-design-detailartikel {
+  align-items: center;
+  margin-top: 80px;
+}
+.content-title-design-artikel1 {
+  margin-left: -40px;
+  text-align: center;
+  line-height: 1;
+  font-size: 50px;
+}
+
+.content-title-design-artikel2 {
+  margin-left: 40px;
+  text-align: center;
+  line-height: 0.7;
+  font-size: 50px;
+}
+.pembatas-main-detailartikel {
+  background-color: #761f25;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.title-main-isiartikel {
+  color: white;
+  font-size: 24px;
+  padding-top: 30px;
+  font-weight: 700;
+}
+
+.konten-isi-detailartikel {
+  margin-top: 100px;
+}
+
+.isidetail-konten {
+  text-align: justify;
+  font-size: 17px;
+  color: white;
+}

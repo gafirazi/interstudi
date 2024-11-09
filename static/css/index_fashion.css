@@ -1,0 +1,871 @@
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../font/coolvetica.woff") format("woff"),
+    url("../font/coolvetica.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  font-family: "Times New Roman" !important;
+}
+
+.navbar {
+  background-color: transparent;
+  transition: 0.1s ease-in;
+}
+
+.nav-link {
+  color: White !important;
+  font-family: "Coolvetica" !important;
+  font-weight: 600;
+  font-size: 20px;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  transition: 0.3s ease-in;
+}
+
+.colored {
+  background-color: #ac2931;
+  transition: 0.1s ease-in;
+}
+
+.dropdown-item {
+  color: black;
+  font-family: "Coolvetica" !important;
+  font-weight: 300;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  transition: 0.3s ease-in;
+}
+
+.footer-index {
+  background-color: #ac2931;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  color: white;
+  margin-top: -50px;
+  position: relative;
+  z-index: 3;
+}
+
+.main-div {
+  position: relative;
+
+  padding-top: 75px;
+  padding-bottom: 90px;
+
+  /* border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px; */
+
+  /* background-image: url("../img/background-base.png"); */
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/background-base.png");
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.title-div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.title-inner {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.button-explore {
+  padding: 10px 40px;
+  background-color: #fb1f1f;
+}
+
+.a-explore {
+  text-decoration: none;
+  color: white;
+}
+
+.a-explore:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.title-artwork {
+  width: 5%;
+}
+.title-design {
+  align-items: center;
+}
+.content-title-design {
+  text-align: right;
+  line-height: 0.7;
+  font-size: 70px;
+}
+
+.detail-main-div {
+  margin-top: 30px;
+  width: 70%;
+}
+
+.scroll-down {
+  background-color: #dc2e37;
+  height: 120px;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 2px 18px 13px 5px rgba(0, 0, 0, 0.22);
+}
+.content-scroll-down {
+  padding-top: 30px;
+  color: white;
+  font-size: 35px;
+}
+
+/* Section Pengajar */
+.about-pengajar {
+  margin-top: 100px;
+}
+.about-left {
+  margin-right: 0px !important;
+}
+.image-pengajar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.about-right {
+  margin-top: 70px;
+  margin-left: -40px;
+  color: #ffc5c4;
+}
+
+.row-content-profile {
+  display: flex;
+  width: 120% !important;
+}
+
+.nama-pengajar {
+}
+.role-pengajar {
+}
+
+.deskripsi-pengajar {
+}
+.angka-content-pengajar {
+}
+.row-content-profile {
+}
+.jenis-angka-content-pengajar {
+  margin-top: 22px;
+  margin-left: 8px;
+}
+
+/* section Materi Design */
+.materi-tittle-inner {
+  margin: auto;
+  width: 250px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+}
+.title-materi-design {
+  margin-top: 80px;
+
+  color: white;
+}
+.content-materi-design {
+  text-align: center;
+  line-height: 0.7;
+  font-size: 60px;
+}
+.content-materi-design-2 {
+  text-align: right !important;
+  line-height: 0.7;
+  font-size: 60px;
+}
+
+/* section konten materi design  */
+.isi-materi-design {
+  margin-top: 20px;
+  color: white;
+
+  height: auto;
+  position: relative;
+
+  background-image: url("../img/image-adji.png");
+  background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.card-madetdes {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  background-color: #eb0f28;
+  border-radius: 20px;
+  width: 240px;
+  height: 370px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  box-shadow: -1px 3px 28px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+.card-madetdes:hover {
+  transform: translateY(-15px);
+  transition: all 0.4s ease-in-out;
+  box-shadow: -1px 3px 28px 4px rgba(125, 10, 10, 0.62);
+}
+
+.circle-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle-div {
+  display: flex; 
+  width: 120px; 
+  height: 120px; 
+  background-color: white; 
+  border-radius: 50%; 
+  margin: auto; 
+  align-items: center;
+}
+
+.title-card-matdes {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.isi-card-matdes {
+  font-size: 14px;
+}
+
+.daftar-harga {
+  height: auto;
+}
+
+/* card daftar harga  */
+.column-card-harga {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  background-image: linear-gradient(to bottom, #ff0522, #a7242c);
+  color: white;
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+  padding-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  box-shadow: -1px 3px 28px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+.column-card-harga:hover {
+  transform: translateY(-15px);
+  transition: all 0.4s ease-in-out;
+  box-shadow: -1px 3px 28px 4px rgba(125, 10, 10, 0.62);
+}
+
+.dotindex {
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #941e24;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.title-card-harga {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.fix-harga {
+  font-weight: bold;
+  font-size: 27px;
+  text-decoration: underline solid rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.isi-jenis-tunai {
+  margin-bottom: 0;
+}
+
+.isi-jenis-tunai-2 {
+  margin-bottom: 10px;
+}
+
+.garis {
+  border: 1px solid #ffffff;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 65%;
+}
+.detailhargadiskon {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.bayar-angsuran {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.total-bayar {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.detail-angsuran {
+  font-style: italic;
+  text-decoration: underline solid rgb(255, 255, 255);
+}
+
+.maps {
+  margin-top: 100px;
+  align-content: center;
+}
+.map-interstudi {
+  width: 50%;
+  height: 450px;
+  display: block;
+  margin: 0 auto;
+  background-color: #777;
+}
+
+@media (max-width: 1200px) {
+  /* section pertama */
+  /* .indexpage {
+    height: 900vh !important;
+  } */
+  .main-div {
+    height: 400px;
+  }
+  .content-title-design {
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .detail-main-div {
+    text-align: justify;
+    margin-top: 30px;
+    width: 120%;
+  }
+  /* pembatas */
+  .content-scroll-down {
+    padding-top: 16px;
+    color: white;
+    font-size: 23px;
+  }
+  .scroll-down {
+    background-color: #dc2e37;
+    height: 80px;
+    text-align: center;
+  }
+  .logo-scroll {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  /* section 2  */
+  .about-pengajar {
+    margin-top: 40px;
+  }
+  .about-left {
+    margin-right: 0px !important;
+  }
+  .image-pengajar {
+    width: 50%;
+  }
+
+  .about-right {
+    margin-top: 50px;
+    margin-left: 0px;
+    color: #ffc5c4;
+  }
+  .nama-pengajar {
+    font-size: 35px;
+  }
+  .role-pengajar {
+    font-size: 27px;
+  }
+
+  .deskripsi-pengajar {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .row-content-profile {
+    text-align: center !important;
+    display: flex;
+    width: 50% !important;
+  }
+
+  .angka-content-pengajar {
+    font-size: 35px;
+  }
+  .jenis-angka-content-pengajar {
+    font-size: 12px;
+  }
+  /* Section 3  */
+  .title-materi-design {
+    margin-top: 50px !important;
+    color: white;
+  }
+  .content-materi-design {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 45px;
+  }
+  .content-materi-design-2 {
+    text-align: center !important;
+    line-height: 0.7;
+    font-size: 45px;
+  }
+  /* Bagian card  */
+  .isi-card-matdes {
+    font-size: 14px;
+  }
+
+  /* Section 3  */
+  .column-card-harga {
+    border-radius: 20px;
+    width: 240px;
+  }
+  .dotindex {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: #941e24;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .title-card-harga {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .fix-harga {
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline solid rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  .isi-jenis-tunai {
+    margin-bottom: 0;
+  }
+
+  .isi-jenis-tunai-2 {
+    margin-bottom: 10px;
+  }
+
+  .garis {
+    border: 1px solid #ffffff;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 65%;
+  }
+  .detailhargadiskon {
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
+    color: #ffffff;
+  }
+
+  .bayar-angsuran {
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+
+  .total-bayar {
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  .detail-angsuran {
+    font-size: 17px;
+    font-style: italic;
+    text-decoration: underline solid rgb(255, 255, 255);
+  }
+
+  /* section maps  */
+  .maps {
+    margin-top: 10px;
+    align-content: center;
+  }
+  .map-interstudi {
+    width: 70%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    background-color: #777;
+  }
+}
+
+@media (max-width: 800px) {
+  /* section pertama */
+  /* .indexpage {
+    height: 1370vh !important;
+  } */
+  .main-div {
+    height: 450px;
+  }
+  .content-title-design {
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .detail-main-div {
+    text-align: justify;
+    margin-top: 30px;
+    width: 120%;
+  }
+  /* pembatas */
+  .content-scroll-down {
+    padding-top: 16px;
+    color: white;
+    font-size: 23px;
+  }
+  .scroll-down {
+    background-color: #dc2e37;
+    height: 80px;
+    text-align: center;
+  }
+  .logo-scroll {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  /* section 2  */
+  .about-pengajar {
+    margin-top: 40px;
+  }
+  .about-left {
+    margin-right: 0px !important;
+  }
+  .image-pengajar {
+    width: 50%;
+  }
+
+  .about-right {
+    margin-top: 50px;
+    margin-left: 0px;
+    color: #ffc5c4;
+  }
+  .nama-pengajar {
+    font-size: 35px;
+  }
+  .role-pengajar {
+    font-size: 27px;
+  }
+
+  .deskripsi-pengajar {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .row-content-profile {
+    text-align: center !important;
+    display: flex;
+    width: 50% !important;
+  }
+
+  .angka-content-pengajar {
+    font-size: 35px;
+  }
+  .jenis-angka-content-pengajar {
+    font-size: 12px;
+  }
+  /* Section 3  */
+  .title-materi-design {
+    margin-top: 50px !important;
+    color: white;
+  }
+  .content-materi-design {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 45px;
+  }
+  .content-materi-design-2 {
+    text-align: center !important;
+    line-height: 0.7;
+    font-size: 45px;
+  }
+  /* Bagian card  */
+  .isi-card-matdes {
+    font-size: 14px;
+  }
+
+  /* Section 3  */
+  .column-card-harga {
+    border-radius: 20px;
+    width: 240px;
+  }
+  .dotindex {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: #941e24;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .title-card-harga {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .fix-harga {
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline solid rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  .isi-jenis-tunai {
+    margin-bottom: 0;
+  }
+
+  .isi-jenis-tunai-2 {
+    margin-bottom: 10px;
+  }
+
+  .garis {
+    border: 1px solid #ffffff;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 65%;
+  }
+  .detailhargadiskon {
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
+    color: #ffffff;
+  }
+
+  .bayar-angsuran {
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+
+  .total-bayar {
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  .detail-angsuran {
+    font-size: 17px;
+    font-style: italic;
+    text-decoration: underline solid rgb(255, 255, 255);
+  }
+
+  /* section maps  */
+  .maps {
+    margin-top: 10px;
+    align-content: center;
+  }
+  .map-interstudi {
+    width: 70%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    background-color: #777;
+  }
+}
+
+@media (max-width: 400px) {
+  /* section pertama */
+  .main-div {
+    height: 430px;
+  }
+  .content-title-design {
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .detail-main-div {
+    text-align: justify;
+    margin-top: 30px;
+    width: 120%;
+  }
+  /* pembatas */
+  .content-scroll-down {
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+  }
+  .scroll-down {
+    background-color: #dc2e37;
+    height: 80px;
+    text-align: center;
+  }
+  .logo-scroll {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  /* Section 2  */
+  .about-pengajar {
+    margin-top: 40px;
+  }
+  .about-left {
+    margin-right: 0px !important;
+  }
+  .image-pengajar {
+    width: 60%;
+  }
+
+  .about-right {
+    margin-top: 50px;
+    margin-left: 0px;
+    color: #ffc5c4;
+  }
+  .nama-pengajar {
+    font-size: 30px;
+  }
+  .role-pengajar {
+    font-size: 22px;
+  }
+
+  .deskripsi-pengajar {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .row-content-profile {
+    text-align: center !important;
+    display: flex;
+    width: 50% !important;
+  }
+
+  .angka-content-pengajar {
+    font-size: 30px;
+  }
+  .jenis-angka-content-pengajar {
+    font-size: 12px;
+  }
+
+  /* Section 3  */
+  .title-materi-design {
+    margin-top: 50px !important;
+    color: white;
+  }
+  .content-materi-design {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 45px;
+  }
+  .content-materi-design-2 {
+    text-align: center !important;
+    line-height: 0.7;
+    font-size: 45px;
+  }
+  /* Bagian card  */
+  .isi-card-matdes {
+    font-size: 14px;
+  }
+
+  /* Section 3  */
+  .column-card-harga {
+    border-radius: 20px;
+    width: 240px;
+  }
+  .dotindex {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: #941e24;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .title-card-harga {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .fix-harga {
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: underline solid rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  .isi-jenis-tunai {
+    margin-bottom: 0;
+  }
+
+  .isi-jenis-tunai-2 {
+    margin-bottom: 10px;
+  }
+
+  .garis {
+    border: 1px solid #ffffff;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 65%;
+  }
+  .detailhargadiskon {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .bayar-angsuran {
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+
+  .total-bayar {
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  .detail-angsuran {
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline solid rgb(255, 255, 255);
+  }
+  .maps {
+    margin-top: 10px;
+    align-content: center;
+  }
+  .map-interstudi {
+    width: 250px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+    background-color: #777;
+  }
+}

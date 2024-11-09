@@ -1,0 +1,68 @@
+{% extends 'base_grafis.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'css/program_lainnya.css' %}" />
+
+<div class="main-program-lainnya-div">
+  <div class="title-div">
+    <div class="title-program-lainnya-inner">
+      <h1>Program Lainnya</h1>
+    </div>
+  </div>
+
+  <!-- <br><br> -->
+  <!-- <img src="{% static 'img/white_artwork.png' %}" class="white-artwork wa" alt=""> -->
+</div>
+
+
+<div class="container-fluid color-div">
+<div class="container white-div">
+
+  {% for key, value in program_lainnya.items %}
+  <div class="program-lainnya-div"
+        style="background-image: url('../static/img/{{key}}.png'); width: 90%;background-size: cover; background-repeat: no-repeat; color: white; margin: auto; border-radius: 25px;"
+      >
+    <div class="events-text" style="width: 45%; padding: 40px;">
+      <h4>{{value.title}}</h4>
+      <p>{{value.desc}}</p>
+      <a href="#" style="text-decoration: none; border: none; color: white; font-weight: 700;">View More >></a>
+    </div>
+  </div>
+  <br><br>
+  {% endfor %}
+
+  <br /><br /><br />
+</div>
+</div>
+
+<script>
+  colors = ["#FF0000", "#FF9C44", "#930DFF", "#12DBA0", "#FFBA00", "#197DC3", "#105036", "#848484"]
+  if(window.innerWidth <= 991){
+      console.log("yey");
+      let programs = document.getElementsByClassName("program-lainnya-div")
+      let events = document.getElementsByClassName("events-text")
+      for (let index = 0; index < programs.length; index++) {
+        programs[index].style.backgroundImage = null;
+        programs[index].style.width= null;
+        programs[index].style.backgroundSize= null; 
+        programs[index].style.backgroundRepeat= null;  
+        programs[index].style.backgroundColor=colors[index]
+        events[index].style.width = "100%"
+      }
+    }
+  window.addEventListener("resize", () => {
+    if(window.innerWidth <= 991){
+      console.log("yey");
+      let programs = document.getElementsByClassName("program-lainnya-div")
+      let events = document.getElementsByClassName("events-text")
+      for (let index = 0; index < programs.length; index++) {
+        programs[index].style.backgroundImage = null;
+        programs[index].style.width= null;
+        programs[index].style.backgroundSize= null; 
+        programs[index].style.backgroundRepeat= null;  
+        programs[index].style.backgroundColor=colors[index]
+        events[index].style.width = "100%"
+      }
+    }
+  });
+</script>
+
+{% endblock content %}

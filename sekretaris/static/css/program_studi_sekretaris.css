@@ -1,0 +1,65 @@
+.program-studi-div{
+  width: 45vw; 
+  margin: auto;
+}
+
+.jadwal{
+  /* margin: auto; 
+  width: 45vw;
+  background-image: linear-gradient(
+      to bottom right,
+      #ff52df,
+      #FF8BD9
+  ); 
+  color: white; 
+  border-radius: 20px; 
+  padding: 20px; */
+
+  color: white; 
+  padding: 50px 20px; 
+  border-radius: 20px; 
+  background-image: linear-gradient(
+    to bottom right,
+    #f32aac,
+  #FF91D8
+  );
+  box-shadow: 0px 7px 27px -8px rgba(0,0,0,0.75);
+}
+
+@media (max-width: 791px) {
+  .program-studi-div{
+    width: 100%;      
+  }
+
+  .jadwal-div{
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (max-width: 460px) {
+  .col-6 h5{
+    font-size: 16px;
+  }
+
+  .jadwal{
+    padding: 30px 20px;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+  .prodi-title{
+    font-size: 2rem;
+  }
+
+  .prodi-subtitle{
+    font-size: 1.5rem;    
+  }
+
+  .prodi-desc{
+    font-size: 0.9rem;
+  }
+
+}

@@ -1,0 +1,373 @@
+{% extends 'base_fashion.html' %} {% load static %} {% block content %}
+
+<div class="indexpage" style="background-color: #a7242c; padding-bottom: 100px;">
+  <div class="main-div">
+    <div class="title-div">
+      <div class="title-inner">
+        <img
+          src="{% static 'img/logo_interstudi.png' %}"
+          class="title-artwork"
+          alt=""
+        />
+        <br />
+        <div class="title-design">
+          <h1 class="content-title-design">Fashion</h1>
+          <h1 class="content-title-design">Design</h1>
+        </div>
+
+        <p class="detail-main-div">
+          Fashion Design (6 Bulan) InterStudi Mengarahkan peserta pada kemampuan
+          merancang busana untuk berbagai keperluan (event). Siswa InterStudi
+          telah berhasil memenangkan lomba perancang busana, baik tingkat
+          Nasional maupun Internasional (Paris, Jepang)
+        </p>
+
+        <!-- <a class="a-explore" href="#"
+          ><div class="button-explore">EXPLORE</div></a
+        > -->
+      </div>
+    </div>
+  </div>
+  <div class="scroll-down">
+    <br>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="56"
+      height="56"
+      color="white"
+      fill="currentColor"
+      class="bi bi-chevron-compact-down logo-scroll"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
+      />
+    </svg>
+  </div>
+  <div class="container about-pengajar">
+    <div class="row">
+      <div class="col-lg-5 about-left">
+        <img
+          src="{% static 'img/pengajar.jpg' %}"
+          class="image-pengajar"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-7 about-right">
+        <h1 class="nama-pengajar">Adjie Notonegoro</h1>
+        <h2 class="role-pengajar">Training Advisor & Pengajar</h2>
+        <p class="deskripsi-pengajar">
+          Karya busananya telah dipakai oleh orang-orang terkenal dari kalangan
+          artis, bintang film, sampai kepala negara mulai dari Gus Dur
+          (Abdurahman Wahid), Bill Clinton, hingga Fidel Castro. Adji pernah
+          belajar di sekolah mode Mueller und Sohn di Jerman dan kemudian ke
+          Paris dan Italia memperdalam ilmunya.
+        </p>
+
+        <div class="row">
+          <div class="col-sm-3 col-lg-3 row-content-profile">
+            <h2 class="angka-content-pengajar">72</h2>
+            <p class="jenis-angka-content-pengajar">Pelatihan</p>
+          </div>
+          <div class="col-sm-4 col-lg-4 row-content-profile">
+            <h2 class="angka-content-pengajar">1326</h2>
+            <p class="jenis-angka-content-pengajar">Total Murid</p>
+          </div>
+          <div class="col-sm-5 col--lg-5 row-content-profile">
+            <h2 class="angka-content-pengajar">72</h2>
+            <p class="jenis-angka-content-pengajar">Rancangan Busana</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="materi-tittle-inner">
+    <div class="title-materi-design">
+      <h1 class="content-materi-design">Materi</h1>
+      <h1 class="content-materi-design-2">Design</h1>
+    </div>
+  </div>
+
+  <div class="isi-materi-design">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/pensil.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Teknik Gambar</h4>
+            <p class="isi-card-matdes">
+              Mempelajari tentang teknik desain anatomi tubuh dan teknik
+              menggambar bagian-bagian busana untuk penyelesaian sebuah desain.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/teori warna.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Teori Warna</h4>
+            <p class="isi-card-matdes">
+              Untuk memahami teori-teori warna yang dikemukakan beberapa ahli
+              yaitu Teori warna Prang, Teori warna Brewster, Teori warna
+              Munsell, dan Teori warna Oswald.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/pengetahuan tekstil.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Pengetahuan Tekstil</h4>
+            <p class="isi-card-matdes">
+              Pengetahuan tentang jenis dan sifat serat tekstil untuk mengenali,
+              memilih, memproduksi, menggunakan dan merawat berbagai produk
+              tekstil seperti serat, benang, kain, pakaian dan tekstil lenan
+              rumah tangga lainnya.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/pola.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Pola</h4>
+            <p class="isi-card-matdes">
+              Untuk menguasai cara pembuatan pola / bentuk / model yang bisa
+              dipakai untuk membuat atau menghasilkan suatu bagian dari sebuah
+              rancangan busana. Mulai dari mengambil ukuran, membuat pola, pecah
+              pola, menggunting sampai menjahit pakaian.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/fashion design.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Fashion Design</h4>
+            <p class="isi-card-matdes">
+              Mempelajari sebuah desain yang memiliki suatu rupa atau bentuk
+              yang dapat dilihat, bentuk ini dihasilkan berdasarkan pada
+              prinsip-prinsip desain.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/teknik jahit.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Teknik Jahit</h4>
+            <p class="isi-card-matdes">
+              Untuk menguasai teknik menjahit yang baik dan benar guna
+              menghasilkan kualitas dari hasil produk busana dengan
+              mempertimbangkan desain busana dan bahan dasar yang dipakai.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/teknik praktek.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Teori & Praktek</h4>
+            <p class="isi-card-matdes">
+              Mempelajari cara perhitungan harga sebuah desain, baik dari
+              perhitungan harga bahan dasar hingga menentukan harga dipasaran.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/proses kreatif.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Proses Kreatif</h4>
+            <p class="isi-card-matdes">
+              Mampu mengembangkan penguasaan pengetahuan, konsep dasar, proses
+              pembuatan produk, dan memiliki apresiasi terhadap produk yang
+              dibuat.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/dasar design.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Dasar Desain</h4>
+            <p class="isi-card-matdes">
+              Mampu merancang sebuah desain yang disusun berdasarkan garis,
+              bentuk, ukuran, warna, tekstur dan value dari suatu benda yang
+              dibuat berdasarkan prinsip-prinsip desain.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/asistensi tugas akhir.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Asistensi Tugas Akhir</h4>
+            <p class="isi-card-matdes">
+              Melaksanakan asistensi / bimbingan dalam membuat karya desain
+              busana.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card-madetdes">
+            <div class="circle-div">
+              <img
+                src="{% static 'img/sidang tugas akhir.png' %}"
+                class="circle-icon"
+                alt=""
+              />
+            </div>
+            <h4 class="title-card-matdes">Sidang Tugas Akhir</h4>
+            <p class="isi-card-matdes">
+              Mempresentasikan sidang tugas akhir terhadap karya busana yang
+              telah dibuat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="daftar-harga">
+    <div class="materi-tittle-inner">
+      <div class="title-materi-design">
+        <h1 class="content-materi-design">Daftar</h1>
+        <h1 class="content-materi-design-2">Harga</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 card-harga">
+          <div class="column-card-harga">
+            <div style="text-align: center">
+              <span class="dot dotindex"></span>
+            </div>
+            <h1 class="title-card-harga">Harga Online</h1>
+            <span class="detailhargadiskon"><s>Rp. 11.550.000</s> </span>
+            <p>Potongan biaya 35%</p>
+            <br />
+
+            <p>Khusus harga di tahun 2021</p>
+            <p class="fix-harga">Rp.7.500.000</p>
+            <div class="jenis-pembayaran">
+              <p class="isi-jenis-tunai">Pembayaran Tunai</p>
+              <p class="isi-jenis-tunai-2">Program 6 Bulan</p>
+            </div>
+
+            <div class="garis-bayar">
+              <hr class="garis" />
+              <p class="bayar-angsuran">Bayar Dengan Angsuran 3x</p>
+              <hr class="garis" />
+            </div>
+
+            <p class="total-bayar">-Rp. 11.300.00,00</p>
+
+            <div class="detail-angsuran">
+              <p>Angsuran 1.Rp.5.855.000</p>
+              <p>Angsuran 2.Rp.3.525.000</p>
+              <p>Angsuran 3.Rp.2.250.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 card-harga">
+          <div class="column-card-harga">
+            <div style="text-align: center">
+              <span class="dot dotindex"></span>
+            </div>
+            <h1 class="title-card-harga">Harga Online</h1>
+            <span class="detailhargadiskon"><s>Rp. 11.750.000</s> </span>
+            <p>Potongan biaya 35%</p>
+            <br />
+
+            <p>Khusus harga di tahun 2021</p>
+            <p class="fix-harga">Rp.7.600.000</p>
+            <div class="jenis-pembayaran">
+              <p class="isi-jenis-tunai">Pembayaran Tunai</p>
+              <p class="isi-jenis-tunai-2">Program 6 Bulan</p>
+            </div>
+
+            <div class="garis-bayar">
+              <hr class="garis" />
+              <p class="bayar-angsuran">Bayar Dengan Angsuran 3x</p>
+              <hr class="garis" />
+            </div>
+
+            <p class="total-bayar">-Rp. 11.750.00,00</p>
+
+            <div class="detail-angsuran">
+              <p>Angsuran 1.Rp.5.855.000</p>
+              <p>Angsuran 2.Rp.3.525.000</p>
+              <p>Angsuran 3.Rp.2.350.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="maps">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31728.50632921006!2d106.797831358722!3d-6.255392560214115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f16ae11eebb1%3A0x77bb713e6c8e9d09!2sInterStudi%20Bulungan!5e0!3m2!1sen!2sid!4v1628184336716!5m2!1sen!2sid"
+      class="map-interstudi"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
+{% endblock content %}

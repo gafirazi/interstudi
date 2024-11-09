@@ -1,0 +1,38 @@
+.main-program-lainnya-div{
+  background-image: url('../img/bg_program_lainnya.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.title-program-lainnya-inner{
+  padding-top: 180px;
+  margin: auto;
+  width: 70%;
+  color: white;
+  text-align: center;
+}
+
+.color-div{
+  background-image: linear-gradient(
+    to bottom right,
+    #136BED,
+    #A827FB
+  );
+  padding-top: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-image: linear-gradient(
+    to bottom right,
+    #BF32FB,
+    #1360E2
+  );
+  margin-top: -50px;
+  padding-bottom: 110px;
+  width: 100%;
+}
+
+.white-div{
+  width: 80%;
+  border-radius: 30px;
+}

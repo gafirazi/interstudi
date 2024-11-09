@@ -1,0 +1,36 @@
+{% extends 'base_sekretaris.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'css/artikel_sekretaris.css' %}">
+<div
+  class="artikel-hero"
+  style="background-image: url('/static/img/{{img}}');"
+>
+  <div
+    class="artikel-hero-content"
+  >
+    <h1>{{title}}</h1>
+    <h4>
+      {{desc}}
+    </h4>
+  </div>
+</div>
+
+<div class="container-fluid white-div">
+
+<div class="container">
+  {{content|safe}}
+
+  <br /><br /><br /><br /><br /><br /><br /><br />
+  <center>
+    <h3><b>Pendaftaran Online</b></h3>
+  </center>
+
+  <button
+    class="button-klik-disini"
+  >
+    Klik Disini
+</button>
+  <br /><br /><br />
+</div>
+</div>
+
+{% endblock content %}

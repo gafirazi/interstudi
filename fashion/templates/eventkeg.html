@@ -1,0 +1,77 @@
+{% extends 'base_fashion.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'css/eventkeg.css' %}" />
+
+<div style=" background-color: #92272d; padding-bottom: 100px;">
+  <div class="main-div-eventkeg">
+    <div class="title-div">
+      <div class="title-inner">
+        <div class="title-design-eventkeg">
+          <h1 class="content-title-design-eventkeg">Events</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pembatas-main-detailartikel">
+    <p class="title-main-eventkeg">Kegiatan Belajar & Hasil Karya Siswa</p>
+  </div>
+
+  <div class="konten-isi-detailartikel">
+    <div id="carousel-1" class="carousel slide" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+        {% for eventkeg in eventkeg_imgs %}
+        {% if forloop.counter == 1 %}
+        <div class="carousel-item active">
+          <!-- konten carousel -->
+          <div class="itemimg">
+            <img
+              class="d-block w-50 m-auto"
+              src="{% static 'img/'|add:eventkeg %}"
+              alt="Slide"
+            />
+          </div>
+          <!-- konten carousel -->
+        </div>
+        {% else %}
+        <div class="carousel-item">
+          <!-- konten carousel -->
+          <div class="itemimg">
+            <img
+              class="d-block w-50 m-auto"
+              src="{% static 'img/'|add:eventkeg %}"
+              alt="Slide"
+            />
+          </div>
+          <!-- konten carousel -->
+        </div>
+
+        {% endif %}
+        {% endfor %}
+
+
+      <a
+        class="carousel-control-prev"
+        href="#carousel-1"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">prev</span>
+      </a>
+
+      <a
+        class="carousel-control-next"
+        href="#carousel-1"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">next</span>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

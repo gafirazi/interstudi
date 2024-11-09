@@ -1,0 +1,70 @@
+{% extends 'base_fashion.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'css/pendaftaranonline.css' %}" />
+
+<div class="page-faq">
+  <div class="main-div-faq">
+    <div class="title-div">
+      <div class="title-inner">
+        <br />
+        <div class="title-design">
+          <h1 class="content-title-design-faq">Pendaftaran Online</h1>
+        </div>
+
+        <div class="card-faq">
+          <div style="text-align: center">
+            <span class="dot dotfaq"></span>
+          </div>
+          <div class="faq-form">
+            <input type="text" name="" id="" placeholder="Nama" />
+            <br /><br />
+
+            <textarea rows="3" placeholder="Alamat"></textarea>
+            <br />
+            <br />
+            <select id="cars" name="cars" placeholder="Pembukaan Kelas">
+              <option class="placeholde-select" value="" disabled selected>
+                Pembukaan Kelas
+              </option>
+              <option value="angkatan_77">Angkatan 77 : 31 Januari 2020</option>
+              <option value="angkatan_78">Angkatan 78: 29 Juli 2020</option>
+              <option value="angkatan_79">Angkatan 79: 30 Oktober 2020</option>
+            </select>
+            <br />
+            <br />
+            <input type="text" name="" id="" placeholder="Email" />
+            <br /><br />
+            <input type="text" name="" id="" placeholder="" />
+            <br /><br />
+            <div class="radio-button">
+              <div class="container">
+                <div class="row">
+                  <di class="col-xs-6 col-md-6 col-lg-6"
+                    ><label class="container"
+                      >Laki - laki
+                      <input type="radio" checked="checked" name="radio" />
+                      <span class="checkmark"></span> </label
+                  ></di>
+                  <di class="col-xs-6 col-md-6 col-lg-6"
+                    ><label class="container"
+                      >Perempuan
+                      <input type="radio" name="radio" />
+                      <span class="checkmark"></span> </label
+                  ></di>
+                </div>
+              </div>
+            </div>
+
+            <br />
+            <input type="tel" id="phone" name="phone" placeholder="No Telp" />
+            <br /><br />
+
+            <button type="submit" class="faq-button">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,54 @@
+{% extends 'base_pr.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'css/gallery.css' %}" />
+
+<div class="page-gallery">
+  <div class="main-div-gallery"></div>
+  <div class="pembatas-main"></div>
+  <h1 class="title-gallery">Gallery</h1>
+
+  <div class="row">
+    <div class="col-lg-6 center">
+      <div class="card-img">
+        <img
+          class="img-style-gallery"
+          src="{% static 'img/gallery-1.png' %}"
+          alt=""
+        />
+        <p class="text-desc-gallery">Interstudi Camp</p>
+      </div>
+    </div>
+    <div class="col-lg-6 center">
+      <div class="card-img">
+        <img
+          class="img-style-gallery"
+          src="{% static 'img/gallery-2.png' %}"
+          alt=""
+        />
+        <p class="text-desc-gallery">Table Manner</p>
+      </div>
+    </div>
+    <div class="col-lg-6 center">
+      <div class="card-img">
+        <img
+          class="img-style-gallery"
+          src="{% static 'img/gallery-3.png' %}"
+          alt=""
+        />
+        <p class="text-desc-gallery">Kunjungan Studi</p>
+      </div>
+    </div>
+    <div class="col-lg-6 center">
+      <div class="card-img">
+        <img
+          class="img-style-gallery"
+          src="{% static 'img/gallery-4.png' %}"
+          alt=""
+        />
+        <p class="text-desc-gallery">Seminar Interstudi</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

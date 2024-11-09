@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interstudi</title>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+
+</head>
+<body>
+  <div class="landing-div">
+    <div class="inner-div">
+      <img src="{% static 'img/interstudi_white.png' %}" alt="">
+      <h3 class="landing-tagline"><strong>FOR A BETTER FUTURE</strong></h3>
+      <p class="landing-text">Lembaga Pendidikan InterStudi menerapkan sistem pendidikan profesional yang berfokus pada persiapan praktis bagi siswa untuk bekerja dalam pekerjaan pilihan mereka. Berkat pendidikan seperti itu, Anda akan siap memasuki pasar tenaga kerja dengan persiapan, keterampilan, dan pengetahuan yang sesuai. Ini adalah solusi yang bagus untuk orang-orang yang ingin memulai karir baru dalam profesi yang dipilih, meningkatkan kualifikasi mereka atau kembali ke pasar kerja setelah istirahat panjang.</p>
+      <br><br>
+      <button class="landing-button" type="submit">Explore Our Course</button>
+    </div>
+  </div>
+
+  <div class="sub-div">
+    {% for course in courses %}
+    <div class="course-div" style="background-color: {{ course.color }};">
+      <img class="course-img" src="{% static course.img %}" alt="">
+      <div class="course-detail-div">
+        <h4>Interstudi</h4>
+        <h5>{{ course.name }}</h5>
+        <br>
+        <a href="{{course.url}}" class="course-button">Klik Disini</a>
+      </div>
+    </div>
+    {% endfor %}
+    <!-- <div class="course-div">
+      <img class="course-img" src="{% static 'img/publicrelations.png' %}" alt="">
+      <div class="course-detail-div">
+        <h4>Interstudi</h4>
+        <h5>Public Relations</h5>
+        <br>
+        <button type="button" class="landing-button">Klik Disini</button>
+      </div>
+    </div> -->
+  </div>
+
+  <footer
+      class="page-footer font-small mdb-color lighten-3 pt-4 footer-index footers"
+    >
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+            <!-- Content -->
+            <img
+              src="{% static 'img/logo_interstudi.png' %}"
+              style="width: 100px;"
+              alt="halo halo bandung"
+              id="iconFooter"
+            />
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <!-- Links -->
+            <h5 class="font-weight-bold mb-4">Hubungi Kami</h5>
+
+            <ul class="list-unstyled listFooter">
+              <li>
+                <p>Jl. Bulungan I No. 6</p>
+              </li>
+              <li>
+                <p>Kebayoran Baru</p>
+              </li>
+              <li>
+                <p>Jakarta Selatan</p>
+              </li>
+              <li>
+                <p>Tlp : (021) 7250437</p>
+              </li>
+              <li>
+                <p>Fax : (021)</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <!-- Contact details -->
+            <h5 class="font-weight-bold mb-4">
+              Jam Operasional
+            </h5>
+
+            <ul class="list-unstyled listFooter">
+              <li>
+                <p>Senin s/d Jumat</p>
+              </li>
+              <li>
+                <p>Pukul 8.30am-19.30pm</p>
+              </li>
+              <li>
+                <p>Sabtu</p>
+              </li>
+              <li>
+                <p>Libur</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+            <!-- Social buttons -->
+            <h5 class="font-weight-bold mb-4">Ikuti Kami</h5>
+
+
+            <!-- Instagram -->
+            <a type="button" class="btn-floating btn-instagram">
+              <a href="https://www.instagram.com/interstudi/" style="text-decoration: none; border: none; color: black; font-size: 25px;">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </a>
+            <a type="button" class="btn-floating btn-instagram">
+              <a href="https://www.facebook.com/interstudieducation/" style="text-decoration: none; border: none; color: black; font-size: 25px;">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </a>
+            <a type="button" class="btn-floating btn-instagram">
+              <a href="https://twitter.com/interstudi" style="text-decoration: none; border: none; color: black; font-size: 25px;">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </a>
+            <!-- <a type="button" class="btn-floating btn-instagram">
+              <a href="https://www.instagram.com/interstudi/" style="text-decoration: none; border: none; color: white; font-size: 25px;">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </a> -->
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
